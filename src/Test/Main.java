@@ -11,6 +11,7 @@ public class Main {
         curso.setTitulo("JAVA");
         curso.setCargaHoraria(200);
         curso.setDescricao("Orientacao a Objetos");
+        curso.calcularXP();
         System.out.println(curso);
 
         Mentoria mentoria = new Mentoria();

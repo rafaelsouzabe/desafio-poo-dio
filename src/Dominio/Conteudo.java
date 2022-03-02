@@ -1,7 +1,7 @@
 package Dominio;
 
 public abstract class Conteudo implements IConteudo{
-    protected final double XP_PADRAO = 10d;
+    protected int XP_PADRAO = 10;
     private String titulo;
     private String descricao;
 
@@ -10,6 +10,7 @@ public abstract class Conteudo implements IConteudo{
     public double getXP_PADRAO() {
         return XP_PADRAO;
     }
+
 
     public String getTitulo() {
         return titulo;

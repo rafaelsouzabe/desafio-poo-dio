@@ -23,12 +23,13 @@ public class Mentoria extends Conteudo {
         return "Mentoria{" +
                 "titulo='" + super.getTitulo() + '\'' +
                 ", descricao='" + super.getDescricao() + '\'' +
-                ", data=" + this.data +
+                ", data=" + this.data + '\'' +
+                ", XP=" + super.XP_PADRAO + '\'' +
                 '}';
     }
 
     @Override
-    public void calcularXP(double XP_PADRAO) {
-
+    public int calcularXP() {
+        return super.XP_PADRAO += 20;
     }
 }

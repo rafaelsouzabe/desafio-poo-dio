@@ -8,15 +8,6 @@ public class Curso extends Conteudo {
         super();
     }
 
-    @Override
-    public String toString() {
-        return "Curso{" +
-                "titulo='" + super.getTitulo() + '\'' +
-                ", descricao='" + super.getDescricao() + '\'' +
-                ", cargaHoraria=" + this.cargaHoraria +
-                '}';
-    }
-
     public int getCargaHoraria() {
         return cargaHoraria;
     }
@@ -26,7 +17,17 @@ public class Curso extends Conteudo {
     }
 
     @Override
-    public void calcularXP(double XP_PADRAO) {
+    public int calcularXP() {
+       return super.XP_PADRAO *= getCargaHoraria();
+    }
 
+    @Override
+    public String toString() {
+        return "Curso{" +
+                "titulo='" + super.getTitulo() + '\'' +
+                ", descricao='" + super.getDescricao() + '\'' +
+                ", cargaHoraria=" + this.getCargaHoraria() + '\'' +
+                ", XP=" + super.getXP_PADRAO() + '\'' +
+                '}';
     }
 }
