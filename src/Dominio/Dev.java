@@ -67,4 +67,15 @@ public class Dev {
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
+
+    @Override
+    public String toString() {
+        return "\n\nDev{" +
+                "nome='" + nome + "\n" +
+                " * Conteudos Inscritos=\n " + conteudosInscritos +
+                "\n_\n" +
+                " * Conteudos Concluidos=\n" + conteudosConcluidos +
+                "\n     # XP TOTAL =" + calcularTotalXP() +
+                '}';
+    }
 }
