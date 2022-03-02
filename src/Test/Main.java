@@ -49,8 +49,7 @@ public class Main {
         devJoao.inscreverBootcamp(bootcamp);
         devJoao.progredir();
 
-//        System.out.println("Conteudos Inscritos" + devJoao.getConteudosInscritos());
-//        System.out.println("Conteudos Concluidos" + devJoao.getConteudosConcluidos());
+//
         System.out.println(devJoao);
 
 

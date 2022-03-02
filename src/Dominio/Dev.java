@@ -24,10 +24,9 @@ public class Dev {
         }
     }
     public int calcularTotalXP(){
-
         return this.conteudosConcluidos
                 .stream()
-                .mapToInt(IConteudo::calcularXP)
+                .mapToInt(Conteudo::calcularXP)
                 .sum();
     }
 

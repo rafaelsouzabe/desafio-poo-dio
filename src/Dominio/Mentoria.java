@@ -30,6 +30,6 @@ public class Mentoria extends Conteudo {
 
     @Override
     public int calcularXP() {
-        return super.XP_PADRAO += 20;
+        return super.getXP_PADRAO() + 20;
     }
 }

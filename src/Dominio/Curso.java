@@ -18,7 +18,7 @@ public class Curso extends Conteudo {
 
     @Override
     public int calcularXP() {
-       return super.XP_PADRAO *= getCargaHoraria();
+       return super.getXP_PADRAO() * getCargaHoraria();
     }
 
     @Override
